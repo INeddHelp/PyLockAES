@@ -1,0 +1,7 @@
+setup.py
+ChromaticPrint.egg-info/PKG-INFO
+ChromaticPrint.egg-info/SOURCES.txt
+ChromaticPrint.egg-info/dependency_links.txt
+ChromaticPrint.egg-info/top_level.txt
+chromaticprint/__init__.py
+chromaticprint/colors.py
