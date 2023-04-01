@@ -26,7 +26,7 @@ encryption = AESEncryption(password)
 
 Then you can call the encrypt_file method with the input and output file paths:
 
-```
+```python
 encryption.encrypt_file("input_file.txt", "output_file.txt")
 ```
 
@@ -34,7 +34,7 @@ encryption.encrypt_file("input_file.txt", "output_file.txt")
 
 To decrypt a file, you create an instance of the AESEncryption class with the same password as before:
 
-```
+```python
 from pylockaes import AESEncryption
 
 password = "mysecretpassword"
@@ -43,7 +43,7 @@ encryption = AESEncryption(password)
 
 Then you can call the decrypt_file method with the input and output file paths:
 
-```
+```python
 encryption.decrypt_file("encrypted_file.txt", "decrypted_file.txt")
 ```
 
