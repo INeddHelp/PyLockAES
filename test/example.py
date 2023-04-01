@@ -1,0 +1,7 @@
+from pycryptoguard import PyEncrypt
+# damn browhrgirhwgiwuiguwighwiugipwyg9wjhuguriwghuowurighwuogjurywgihrwuguiudhwighurwig
+#wughiwhgh8wihguorywgiywehgfuoruwigure
+#whig382ut482yt843tyuj4ifouy482iuf284gyu2gy4u9
+#2th47928ufj4hfj842hf8h7yfhd8h4dushfuhd8ufu3jiwf3uf8ijs
+#ghf4udhj3uoiuf843uhgw8aiu3rj8fis
+PyEncrypt.aes_decrypt_file("ec_example.py")
