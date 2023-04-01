@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: PyLockAES
+Version: 1.0
+Summary: A library for encrypting files with AES
+Author: INeddHelp
+Author-email: ineddhelpgithub@gmail.com
