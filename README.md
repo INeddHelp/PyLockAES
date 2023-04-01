@@ -2,6 +2,8 @@
 
 PyLockAES is a Python library that provides AES encryption and decryption functionality. It is designed to make it easy for developers to add encryption to their Python projects.
 
+![Screenshot1](https://i.ibb.co/R2rJKX1/Screenshot-from-2023-04-01-22-34-09.png)
+
 ## Installation
 
 You can install PyLockAES using pip:
