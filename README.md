@@ -49,6 +49,8 @@ Then you can call the decrypt_file method with the input and output file paths:
 encryption.decrypt_file("encrypted_file.bin", "decrypted_file.txt")
 ```
 
+Please note that PyLockAES uses a random nonce for each encryption operation to ensure that the same plaintext doesn't encrypt to the same ciphertext.
+
 # Contributing
 
 Contributions are welcome! If you have a bug fix, enhancement, or new feature to contribute, please open a pull request.
@@ -56,5 +58,7 @@ Contributions are welcome! If you have a bug fix, enhancement, or new feature to
 # Licence
 
 PyLockAES is licensed under the MIT License.
+
+Please note that while PyLockAES provides AES encryption and decryption functionality, it is not a substitute for a properly-designed encryption library for use in production environments. This library is intended for educational purposes and hobby projects only.
 
 Feel free to modify it to better suit your needs!
