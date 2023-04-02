@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b88670a2-fda1-405e-8d08-b1e51ac37682" name="Changes" comment="v1.1" />
+    <list default="true" id="b88670a2-fda1-405e-8d08-b1e51ac37682" name="Changes" comment="v1.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encrypting/pylockaes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/encrypting/pylockaes/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encrypting/pylockaes/encrypt_decrypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/encrypting/pylockaes/encrypt_decrypt.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
