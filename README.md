@@ -29,7 +29,7 @@ encryption = AESEncryption(password)
 Then you can call the encrypt_file method with the input and output file paths:
 
 ```python
-encryption.encrypt_file("input_file.txt", "output_file.txt")
+encryption.encrypt_file("input_file.txt", "output_file.bin")
 ```
 
 ### Decrypting a file
@@ -46,7 +46,7 @@ encryption = AESEncryption(password)
 Then you can call the decrypt_file method with the input and output file paths:
 
 ```python
-encryption.decrypt_file("encrypted_file.txt", "decrypted_file.txt")
+encryption.decrypt_file("encrypted_file.bin", "decrypted_file.txt")
 ```
 
 # Contributing
