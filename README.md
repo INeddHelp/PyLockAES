@@ -22,8 +22,7 @@ To encrypt a file, you first need to create an instance of the AESEncryption cla
 ```python
 from pylockaes import AESEncryption
 
-password = "mysecretpassword"
-encryption = AESEncryption(password)
+encryption = AESEncryption(b'your_password_here')
 ```
 
 Then you can call the encrypt_file method with the input and output file paths:
@@ -39,8 +38,7 @@ To decrypt a file, you create an instance of the AESEncryption class with the sa
 ```python
 from pylockaes import AESEncryption
 
-password = "mysecretpassword"
-encryption = AESEncryption(password)
+encryption = AESEncryption(b'your_password_here')
 ```
 
 Then you can call the decrypt_file method with the input and output file paths:
