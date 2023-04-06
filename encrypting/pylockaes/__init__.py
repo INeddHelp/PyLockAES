@@ -3,15 +3,9 @@ import os
 
 
 class AESEncryption:
-    def __init__(self, password):
-        self.key = self.generate_key(password)
-        self.iv = os.urandom(16)
-
-    @staticmethod
-    def generate_key(password):
-        key = password.encode("utf-8")
-        key += b'\0' * (AES.block_size - len(key) % AES.block_size)
-        return key
+    def __init__(self):
+        self.key = os.urandom(32)
+        self.iv = os.urandom(AES.block_size)
 
     def encrypt_file(self, input_file, output_file):
         with open(input_file, "rb") as infile:
@@ -29,10 +23,11 @@ class AESEncryption:
     def decrypt_file(self, input_file, output_file):
         with open(input_file, "rb") as infile:
             with open(output_file, "wb") as outfile:
-                iv = infile.read(16)
+                iv = infile.read(AES.block_size)
                 cipher = AES.new(self.key, AES.MODE_CBC, iv)
                 while True:
                     chunk = infile.read(64 * 1024)
                     if len(chunk) == 0:
                         break
                     outfile.write(cipher.decrypt(chunk))
+

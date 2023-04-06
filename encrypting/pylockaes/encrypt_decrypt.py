@@ -3,15 +3,9 @@ import os
 
 
 class AESEncryption:
-    def __init__(self, password):
-        self.key = self.generate_key(password)
+    def __init__(self):
+        self.key = os.urandom(32)
         self.iv = os.urandom(AES.block_size)
-
-    @staticmethod
-    def generate_key(password):
-        key = password.encode("utf-8")
-        key += b'\0' * (AES.block_size - len(key) % AES.block_size)
-        return key
 
     def encrypt_file(self, input_file, output_file):
         with open(input_file, "rb") as infile:
