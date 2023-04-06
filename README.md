@@ -22,14 +22,13 @@ To encrypt a file, you first need to create an instance of the AESEncryption cla
 ```python
 from pylockaes import AESEncryption
 
-password = "mysecretpassword"
-encryption = AESEncryption(password)
+encryption = AESEncryption()
 ```
 
 Then you can call the encrypt_file method with the input and output file paths:
 
 ```python
-encryption.encrypt_file("input_file.txt", "output_file.txt")
+encryption.encrypt_file("input_file.txt", "output_file.bin")
 ```
 
 ### Decrypting a file
@@ -39,15 +38,16 @@ To decrypt a file, you create an instance of the AESEncryption class with the sa
 ```python
 from pylockaes import AESEncryption
 
-password = "mysecretpassword"
-encryption = AESEncryption(password)
+encryption = AESEncryption()
 ```
 
 Then you can call the decrypt_file method with the input and output file paths:
 
 ```python
-encryption.decrypt_file("encrypted_file.txt", "decrypted_file.txt")
+encryption.decrypt_file("encrypted_file.bin", "decrypted_file.txt")
 ```
+
+Please note that PyLockAES uses a random nonce for each encryption operation to ensure that the same plaintext doesn't encrypt to the same ciphertext.
 
 # Contributing
 
@@ -56,5 +56,7 @@ Contributions are welcome! If you have a bug fix, enhancement, or new feature to
 # Licence
 
 PyLockAES is licensed under the MIT License.
+
+Please note that while PyLockAES provides AES encryption and decryption functionality, it is not a substitute for a properly-designed encryption library for use in production environments. This library is intended for educational purposes and hobby projects only.
 
 Feel free to modify it to better suit your needs!
