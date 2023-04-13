@@ -22,7 +22,7 @@ class AESEncryption:
                     chunk = infile.read(64 * 1024)
                     if len(chunk) == 0:
                         break
-                    elif len(chunk) % AES.block_size != 0:
+                    if len(chunk) % AES.block_size != 0:
                         chunk += b' ' * (AES.block_size - len(chunk) % AES.block_size)
                     outfile.write(cipher.encrypt(chunk))
 
